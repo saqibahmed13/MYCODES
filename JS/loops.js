@@ -34,8 +34,12 @@ const city = {
 // Loop through states and print state: city pairs
 
 for(const key in state){
-    let stateName = state[key];   // state ka city konsa 
+    let stateName = state[key];   // state ka city konsa  
     let cityKey = key.replace('state','city');
     let cityName  = city[cityKey];
     console.log(`${stateName}: ${cityName}`);
+
+    //state[key]: This expression is used to access the value associated with the current key in the state object. 
+    //For example, if key is "state1", then state[key] is equivalent to state["state1"], 
+    //which retrieves the value "karnataka".
 }
