@@ -51,3 +51,99 @@ let mathAns = math(3);
 
 console.log(mathAns);
 
+
+
+
+// rest parameters function  : these are the parameters accept infinite number of parameters in function represented
+// by 3dots ...
+
+function sum(firstpara,secondpara,...restpara){
+    result = firstpara + secondpara;
+
+    for(let num of restpara){
+        result = result + num;
+    }
+    return result;
+}
+
+let x = sum(10,20);  // here i am using two arguments
+console.log(x);
+
+let y = sum(10,20,40,50); // here more than two i am using as arguments
+console.log(y);
+
+
+
+//higher order function : these are the functions that operates on other function either by taking them as argument or returning them
+
+function applyFunction(x,y,operation){    // here operation will be replaced by add or multi function 
+    return operation(x,y);               // eg : add(x,y)
+}
+
+function add(x,y){
+    return x + y;
+}
+
+function multi(x,y){
+    return x * y;
+}
+
+console.log(applyFunction(2,4,add));   
+
+console.log(applyFunction(2,2,multi));
+
+// returning function
+
+function multiplyBy(factor) {
+    // This function returns another function (anonymous function)
+    return function (number) {
+      return number * factor;   // 2 and 3 will be there as factor once we call double and triple it will multiply respectivly
+    };
+  }
+  
+    // Create functions with specific factors
+  const double = multiplyBy(2);
+  const triple = multiplyBy(3);
+  
+  // Use the generated functions
+  console.log(double(5));  // Outputs: 10
+  console.log(triple(5));  // Outputs: 15
+  
+
+
+  // call back function
+
+  function processData(data, callback) {
+    // Process the data
+    const result = data * 2;
+  
+    // Call the callback function
+    callback(result);
+  }
+  
+  function displayResult(result) {
+    console.log("Result is: " + result);
+  }
+  
+  processData(5, displayResult);  // Outputs: Result is: 10
+  
+
+  //closure function : closures function is where an innerFunction can access the outerFunction even after outerFunction has 
+                       // finished the execution
+
+
+function outerFunction(){
+    let outerValue = " Hi I am from outerFunction";
+
+    function innerFunction(){
+        console.log(outerValue);
+    }
+
+    return innerFunction;
+}
+
+const result2 = outerFunction();    // we should assgined the outerFunction to the variable then only we can able to print innerFunction
+// with out variable reference it is not possible to access the innerFunction
+result2();
+
+
