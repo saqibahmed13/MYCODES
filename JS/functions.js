@@ -36,6 +36,7 @@ return a-b;
     
 
 let subAns = subtract(10,3);
+
 console.log(subAns);
 
 
