@@ -146,4 +146,30 @@ const result2 = outerFunction();    // we should assgined the outerFunction to t
 // with out variable reference it is not possible to access the innerFunction
 result2();
 
+// closures with parameters
 
+function createMultiplier(factor){   //   createMultiplier returns an anonymous function with parameter number 
+    return function(number){
+        return number * factor;
+    }
+}
+
+const doubleMulti = createMultiplier(2);  
+// this is closure so here doubleMulti be pointing to anonymous function that is innerFunction the factor value will be 2 
+
+
+
+console.log(doubleMulti(5));  // 
+
+
+
+
+// self Invoked function 
+
+(function(){
+    let vi = "Hi i am invoked";
+    console.log(vi);
+    })();       
+
+
+// if we use console.log(vi) outside of the function it will through an error 
