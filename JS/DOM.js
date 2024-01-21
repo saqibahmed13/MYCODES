@@ -11,4 +11,8 @@ window.console.log("hello2"); // to use this link the js to html and see in the 
 
 //document.querySelector("idvalue or class or tags (p) ") : this will return the value of 1st elemnent of class or tag or id 
 
-//document.querySelectorAll : this will return all the values of tags or ids or classes 
+eg : document.querySelector(".classname for classes" , "#id for ids")
+
+//document.querySelectorAll : this will return all the values of tags or classes  ( it returns nodelist)
+
+// note : document.querySelectorAll() cannot be used for ids because id is unique
