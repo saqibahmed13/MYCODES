@@ -91,6 +91,13 @@ const arr3Reduce = arr3.reduce((h1,h2)=>{
 })
 
 // dry run : here 2+3(h1+h2) will be added which is 5 then 5 will act as h1 and adds  4 in it and so on 
-//  h1
+//  h1 + h2 
+    // 2 + 3 = 5
+    // 5 + 4 = 9
+    // 9 + 7 = 16
+    // 16 + 9 = 25
+
 console.log(arr3Reduce);
+
+
 
