@@ -28,3 +28,10 @@ let para = document.getAttribute('class');   // output para
 // we can also change the attribute
 
 let changeAttribute = para.serAttribute("class", "new para");  // it will set the class to newpara
+
+
+// css using javascript 
+
+eg: div.style.backgroundColor = "blue" 
+
+// in css we write with "-" eg background-color. javascript will be in camelcasing for the css properties eg: backgroundColor 
