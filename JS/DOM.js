@@ -16,3 +16,15 @@ eg : document.querySelector(".classname for classes" , "#id for ids")
 //document.querySelectorAll : this will return all the values of tags or classes  ( it returns nodelist)
 
 // note : document.querySelectorAll() cannot be used for ids because id is unique
+
+//<img class = "link">
+// <p class = "para"></p>
+
+
+// link para are the attributes
+
+let para = document.getAttribute('class');   // output para
+
+// we can also change the attribute
+
+let changeAttribute = para.serAttribute("class", "new para");  // it will set the class to newpara

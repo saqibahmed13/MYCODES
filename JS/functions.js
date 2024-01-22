@@ -159,8 +159,6 @@ function createMultiplier(factor){   //   createMultiplier returns an anonymous 
 const doubleMulti = createMultiplier(2);  
 // this is closure so here doubleMulti be pointing to anonymous function that is innerFunction the factor value will be 2 
 
-
-
 console.log(doubleMulti(5));  // 
 
 
