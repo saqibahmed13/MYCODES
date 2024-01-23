@@ -35,7 +35,7 @@ para.remove();      // removed
 
 // eg: para.classList.add("content2");
 
-// this will create a new class content 2 in para 
+// this will create a new class content 2 in same para 
 
 // to remove 
 
