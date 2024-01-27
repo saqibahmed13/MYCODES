@@ -34,3 +34,14 @@ para.innerHTML = data[0].text;
 
 //Json.method : basically this gives us Js Object as output [return a second parse first parse is fetching]
 
+
+// we can also do this using promises
+function getDataPromise(){
+    fetch(URL).then((response) =>{
+        return response.json();
+    }).then((data)=>{
+        console.log(data);
+        para.innerHTML = data[0].text;
+    })
+}
+
