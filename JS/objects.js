@@ -64,14 +64,14 @@ console.log(human.fullName());
 
 // Object Constructor
 
-function admi(first,last,age){
+function admis(first,last,age){
     this.first = first;
     this.last = last;
     this.age = age;
 }
 
-const admi1 = new admi("saqib","ahmed",23);
-const admi2 = new admi("sharif","baig",28);
+const admi1 = new admis("saqib","ahmed",23);
+const admi2 = new admis("sharif","baig",28);
 
 console.log(admi1);
 console.log(admi2);
