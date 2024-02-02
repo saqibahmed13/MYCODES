@@ -14,7 +14,6 @@ const person = {
 };
 
 for(const key in person){
-
     console.log(`${key}: ${person[key]}`);
 }
 
@@ -64,6 +63,8 @@ for (const char of sentence) {
 //  both for of and forEach iterates over the values of an objects but for of loop is a normal loop where we can 
 //  use break and continue and for Each it takes a function so we cannot use break and continue. 
 
+
+// forEach is only used for arrays not for objects 
 const numbers = [1,2,3,4,5,6,7];
 numbers.forEach(function(output){
     console.log(output);
