@@ -107,7 +107,7 @@ function multiplyBy(factor) {
   const double = multiplyBy(2);
   const triple = multiplyBy(3);
   
-  // Use the generated functions
+    // Use the generated functions
   console.log(double(5));  // Outputs: 10
   console.log(triple(5));  // Outputs: 15
   
@@ -130,7 +130,7 @@ function multiplyBy(factor) {
   processData(5, displayResult);  // Outputs: Result is: 10
   
 
-  //closure function : closures function is where an innerFunction can access the outerFunction even after outerFunction has 
+//closure function : closures function is where an innerFunction can access the outerFunction even after outerFunction has 
                        // finished the execution
 
 
@@ -144,7 +144,7 @@ function outerFunction(){
     return innerFunction;
 }
 
-const result2 = outerFunction();    // we should assgined the outerFunction to the variable then only we can able to print innerFunction
+const result2 = outerFunction();    // we should assigned the outerFunction to the variable then only we can able to print innerFunction
 // with out variable reference it is not possible to access the innerFunction
 result2();
 
@@ -159,7 +159,8 @@ function createMultiplier(factor){   //   createMultiplier returns an anonymous 
 const doubleMulti = createMultiplier(2);  
 // this is closure so here doubleMulti be pointing to anonymous function that is innerFunction the factor value will be 2 
 
-console.log(doubleMulti(5));  // 
+console.log(doubleMulti(5));  
+ 
 
 
 
