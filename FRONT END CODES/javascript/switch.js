@@ -18,7 +18,7 @@ switch(new Date().getDate()){
         day = "Friday";
         break;
     default:
-        day = "weekend chill";
+    day = "weekend chill";
 }
 
 
