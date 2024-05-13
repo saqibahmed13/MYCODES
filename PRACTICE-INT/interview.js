@@ -9,4 +9,4 @@ console.log(obj);
 Object.preventExtensions(obj);
 
 obj.name4 = "Mahesh";
-console.log(obj);
+console.log(obj);  
