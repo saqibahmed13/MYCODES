@@ -21,23 +21,23 @@ let day = "Monday";
 
 switch(day){
     case "Sunday":
-        console.log("Sunday");
+        console.log(" Its Sunday");
         break;
-        case "Monday":
+    case "Monday":
         console.log(" Its Monday");
         break;
-        case "Tuesday":
+    case "Tuesday":
         console.log(" Its Tuesday");
         break;
-        case "Wedneday":
+    case "Wedneday":
         console.log(" Its Wedneday");
         break;
-        case "Thursday":
+    case "Thursday":
         console.log(" Its Thursday");
         break;
-        case "Friday":
+    case "Friday":
         console.log(" Its Friday");
         break;
-        default:
-        day = console.log("weekend chill");
+    default:
+        console.log("weekend chill");
 }

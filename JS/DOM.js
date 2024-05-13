@@ -11,27 +11,4 @@ window.console.log("hello2"); // to use this link the js to html and see in the 
 
 //document.querySelector("idvalue or class or tags (p) ") : this will return the value of 1st elemnent of class or tag or id 
 
-eg : document.querySelector(".classname for classes" , "#id for ids")
-
-//document.querySelectorAll : this will return all the values of tags or classes  ( it returns nodelist)
-
-// note : document.querySelectorAll() cannot be used for ids because id is unique
-
-//<img class = "link">
-// <p class = "para"></p>
-
-
-// link para are the attributes
-
-let para = document.getAttribute('class');   // output para
-
-// we can also change the attribute
-
-let changeAttribute = para.serAttribute("class", "new para");  // it will set the class to newpara
-
-
-// css using javascript 
-
-eg: div.style.backgroundColor = "blue" 
-
-// in css we write with "-" eg background-color. javascript will be in camelcasing for the css properties eg: backgroundColor 
+//document.querySelectorAll : this will return all the values of tags or ids or classes  ( it reutns nodelist)

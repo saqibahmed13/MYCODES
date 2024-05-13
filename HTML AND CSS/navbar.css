@@ -1,0 +1,25 @@
+/* CSS for navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: hsl(186, 5%, 37%);
+}
+
+
+ .navbar a {
+    float: left;
+    display: block;
+    color: #3793af;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+.navbar a:hover {
+    background-color: #ddd;
+}
