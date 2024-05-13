@@ -80,7 +80,7 @@ console.log(arr2Filter);
 
 // reduce : basically it reduces an array into a single value 
 
-//syntax :         array.reduce(callback, initialValue);
+//syntax : array.reduce(callback, initialValue);
 
 
 const arr3 = [2,3,4,7,9];
