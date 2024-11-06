@@ -17,14 +17,14 @@ for(const key in person){
     console.log(`${key}: ${person[key]}`);
 }
 
-const state = {
+const states = {
     state1: "karnataka",
     state2: "andra",
     state3: "kerala",
     state4: "telangana"
 };
 
-const city = {
+const cities = {
     city1: "bangalore",
     city2: "mumbai",
     city3: "pune",
@@ -33,10 +33,10 @@ const city = {
 
 // Loop through states and print state: city pairs
 
-for(const key in state){
-    let stateName = state[key];   // state ka city konsa  
+for(const key in states){
+    let stateName = states[key];   // states ka city konsa  
     let cityKey = key.replace('state','city');
-    let cityName  = city[cityKey];
+    let cityName  = cities[cityKey];
     console.log(`${stateName}: ${cityName}`);
 
     //state[key]: This expression is used to access the value associated with the current key in the state object. 
