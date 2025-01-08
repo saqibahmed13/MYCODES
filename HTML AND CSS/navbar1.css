@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+.navbar{
+    overflow: hidden;
+}
+
+
+.navbar a {
+    
+   color: blue;
+   padding: 10px 140px;
+   text-decoration: none;
+}
+
+.navbar{
+    margin-top: 20px;
+}
