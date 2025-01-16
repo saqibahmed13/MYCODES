@@ -1,4 +1,5 @@
 // maps are the higher order functions which operates on arrays 
+// maps creates an array by performing some operations on each element 
 
 const numbers = [1,2,3,4,5];
 
@@ -12,8 +13,6 @@ const doubleNumber = numbers.map(function(num){
 const doubleNumber2 = numbers.map((num1)=>num1*2);
 
 console.log(doubleNumber2);
-<<<<<<< HEAD
-=======
 
 
 
@@ -81,7 +80,7 @@ console.log(arr2Filter);
 
 // reduce : basically it reduces an array into a single value 
 
-//syntax : array.reduce(callback, initialValue);
+//syntax :         array.reduce(callback, initialValue);
 
 
 const arr3 = [2,3,4,7,9];
@@ -102,4 +101,3 @@ console.log(arr3Reduce);
 
 
 
->>>>>>> e7fbf26c43912b4ef1532be507caeb250e776706

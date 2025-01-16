@@ -22,13 +22,13 @@ console.log(person.name);
 
 // basic example with empty object 
 
-const person1 ={};
+const person3 ={};
 
-person1.name = "sadiq";
+person3.name = "sadiq";
 
-person1.age = 23;
+person3.age = 23;
 
-console.log(person1);
+console.log(person3);
 
 
 // calculator 
@@ -59,19 +59,52 @@ console.log(human.fullName());
 
 
 
+
+
+
 // Object Constructor
 
-function admi(first,last,age){
+function admis(first,last,age){
     this.first = first;
     this.last = last;
     this.age = age;
 }
 
-const admi1 = new admi("saqib","ahmed",23);
-const admi2 = new admi("sharif","baig",28);
+const admi1 = new admis("saqib","ahmed",23);
+const admi2 = new admis("sharif","baig",28);
 
 console.log(admi1);
 console.log(admi2);
+
+
+
+
+
+
+
+
+// Object Destructing :  We may have an array or object that we are working with, but we only need some of the items contained in these.
+
+const vehileSelect = {
+    name: "fortuner",
+    brandName: "toyota",
+    type:"car",
+    model : 2022
+};
+
+function myVehicle({name,brandName,model}){   // here i have not included type 
+    console.log("My car name is " + name + "of " + model + " brand is " + brandName);
+}
+
+myVehicle(vehileSelect);
+
+
+
+
+
+
+
+
 
 
 
@@ -81,7 +114,6 @@ console.log(admi2);
 function Person(name, age) {
     this.name = name;
     this.age = age;
-    
   }
   
   Person.prototype.greet = function() {
