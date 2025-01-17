@@ -84,6 +84,50 @@ function filterNumbers(arr) {
       return arr.flat(Infinity);    // flattens all the nested arrays ( [1,2,[3,[4,6]],8] )  
       //Infinity as an argument for the depth means it will keep flattening the array no matter how deep the nested arrays go. Essentially, it will flatten all levels of nesting recursively, no matter how many nested arrays there are.
  }
+
+ function sumOfN(n) {
+    return (n*(n+1))/2;
+  }
+  
+  function printMultiplicationTable(n) {
+      const result = [];
+      for(let i = 1 ; i<=10; i++){
+          result.push(`${n} * ${i} = ${n*i}`);
+      }
+    return result;
+  }
+  
+  function countVowels(str) {
+      let counter = 0;
+      for(let i=0; i<str.length; i++){
+          if(str[i] === "A"|| str[i]==="E" || str[i] ==="I" ||str[i]=== "O" || str[i]==="U" ||str[i]=== "a"||str[i]==="e"|| str[i]==="i"|| str[i]==="o"|| str[i]==="u")
+          counter = counter + 1;
+      }
+    return counter;
+  }
+
+
+  function squareNumbers(input){
+    const double  = input.map((values)=> {
+          return values*2
+          
+      });
+      return double;
+  }
+  
+  const arr = [1,2,3,4,5,6];
+
+
+
+const squareNumbers = (arr) => arr.map((value) => value*2) ;
+
+const filterEvenNumbers = (arr) => arr.filter((item)=>(item%2)===0);
+
+const sumPositiveNumbers = (arr) => (arr.filter((item)=>item>0).reduce((sum,item)=>sum+item, 0) );
+
+const getNames = (arr) => arr.map((item)=>item.name);
+
+const findLongestWord = (arr) => arr.reduce((longest,current)=>(current.length>longest.length?current:longest, " "));
  
  
 
