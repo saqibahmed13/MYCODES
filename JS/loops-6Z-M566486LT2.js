@@ -31,7 +31,7 @@ const cities = {
     city4: "hydrabad"
 };
 
-// Loop through states and print state: city pairs
+// Loop through states and print state : city pairs
 
 for(const key in states){
     let stateName = states[key];   // states ka city konsa  
