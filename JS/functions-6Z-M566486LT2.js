@@ -25,7 +25,7 @@ const multiply = function(a,b){
 let answer = multiply(5,5);
 console.log(answer);
 
-// Arrow function  : for single expression no need write { } 
+// Arrow function  : for single expression no need to write { } 
 
 subtract =  (a,b) => {
 return a-b;

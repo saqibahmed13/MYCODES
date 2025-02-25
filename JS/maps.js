@@ -12,8 +12,6 @@ const doubleNumber = numbers.map(function(num){
 const doubleNumber2 = numbers.map((num1)=>num1*2);
 
 console.log(doubleNumber2);
-<<<<<<< HEAD
-=======
 
 
 
@@ -81,6 +79,11 @@ console.log(arr2Filter);
 
 // reduce : basically it reduces an array into a single value 
 
+
+// array.reduce(callback(accumulator, currentValue, index, array), initialValue)
+// accumulator: The accumulated result from the previous callback.
+// currentValue: The current element being processed.
+
 //syntax : array.reduce(callback, initialValue);
 
 
@@ -102,4 +105,3 @@ console.log(arr3Reduce);
 
 
 
->>>>>>> e7fbf26c43912b4ef1532be507caeb250e776706
