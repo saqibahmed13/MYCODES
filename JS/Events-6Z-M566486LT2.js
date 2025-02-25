@@ -1,4 +1,4 @@
-//events :  actions happeing when we click on something
+//events :  actions happening when we click on something
 // eg: onclick , onmouseover
 
 
@@ -50,7 +50,7 @@ Btn.addEventListener("click",handle);      // same call back function
 Btn.removeEventListener("click",handle);   // same call back function 
 
 // reason to give same call back is when we call back differently for both add and remove it will allocate different 
-// space for both resoectivly hence we are assigning it to a variable(handle) first and then using as callback for both add 
+// space for both respectivly hence we are assigning it to a variable(handle) first and then using as callback for both add 
 // and remove
 
 

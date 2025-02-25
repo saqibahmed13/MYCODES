@@ -34,7 +34,7 @@ const cities = {
 // Loop through states and print state: city pairs
 
 for(const key in states){
-    let stateName = states[key];   // states ka city konsa  
+    let stateName = states[key];   // states ka state konsa  
     let cityKey = key.replace('state','city');
     let cityName  = cities[cityKey];
     console.log(`${stateName}: ${cityName}`);
@@ -64,7 +64,8 @@ for (const char of sentence) {
 //  use break and continue and for Each it takes a function so we cannot use break and continue. 
 
 
-// forEach is only used for arrays not for objects 
+// forEach is mainly used for arrays , even for objects we can use but differently 
+
 const numbers = [1,2,3,4,5,6,7];
 numbers.forEach(function(output){
     console.log(output);
@@ -83,6 +84,7 @@ fruits.forEach((fruit ,index,array )=>{ //there is an order in forEach first sho
 });
 
 // while loop
+// when we dont know the number of iterations will use while loop or if we know the number of iterations then will use for loop
 let i =0;
 while(i<=10){
     console.log(i);
